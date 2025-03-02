@@ -1,8 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
 	<title>Vis & Society Assignment 3</title>
 	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<style>
+		img {
+			width: 100%;
+			height: auto;
+		}
+	</style>
 </head>
 
 <body>
@@ -13,7 +20,7 @@
 		</h1>
 
 		<p>
-			<strong>Your Name</strong> — <em>Your MIT Email Address</em>
+			<strong>An Bo Chen</strong> — <em>anbochen@mit.edu</em>
 		</p>
 	</header>
 
@@ -25,34 +32,73 @@
 				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
 			</figure>
 
-			<p>
+			<h3>
 				Insights about the data/visualization:
-			</p>
+			</h3>
 
 			<ul>
-				<li>INSIGHT 1</li>
-				<li>INSIGHT 2</li>
-				<li>INSIGHT 3</li>
+				<li>Major peaks in COVID-19 cases occur around January each year (excluding 2020), indicating a seasonal
+					trend.</li>
+				<li>The largest peak appears in January 2022, representing the Omicron surge, which surpasses all
+					previous waves.</li>
+				<li>The January 2022 surge is still increasing, with no clear sign of decline.</li>
+				<li>Case numbers fluctuate more during the winter of 2020–2021 compared to other periods.</li>
+				<li>Case counts decline during the summer months, as seen in mid-2020 and mid-2021.</li>
+				<li>Smaller peaks are visible in August 2020, May 2021, and September 2021.</li>
+				<li>After the May 2021 peak, cases drop significantly, but after September 2021, they remain relatively
+					high.</li>
 			</ul>
 
-			<p>
+			<h3>
 				Design Critique:
+			</h3>
+
+			<p>The visualization effectively captures the alarming rise in COVID-19 cases during the Omicron wave,
+				making the crisis immediately apparent to a broad audience. Published in The New York Times, the graphic
+				was designed for a general readership rather than a technical or scientific audience, meaning
+				accessibility and impact were key priorities. The spiral format intuitively conveys the recurring nature
+				of COVID-19 waves, reinforcing the idea of seasonal surges in a way that is more engaging than a
+				conventional line chart. By positioning the Omicron peak at the outermost part of the spiral, the design
+				ensures that the most pressing takeaway: the sheer scale of this wave is the most visually dominant
+				feature. The use of a radial scale helps minimize clutter while still showing the long-term trend, and
+				the labeled year markers with arrows effectively guide readers outward from the center, mirroring the
+				pandemic’s progression.</p>
+
+			<p>However, while the spiral design is visually striking, it introduces interpretative challenges that could
+				hinder the intended audience’s understanding. The radial layout inherently exaggerates differences in
+				magnitude, making the Omicron peak appear even more dramatic than it already is. Additionally, the 2020
+				data, which is smaller and more compressed toward the center, is harder to read, potentially downplaying
+				the severity of earlier waves. This distortion makes it difficult to accurately compare case levels
+				across different periods, a crucial consideration for policymakers or readers trying to assess
+				historical trends. The absence of clear month demarcations further reduces temporal precision, which
+				could make it harder for readers to connect the case trends to real-world events, such as vaccine
+				rollouts or new variant emergences.
 			</p>
 
-			<ul>
-				<li>CRITIQUE 1</li>
-				<li>CRITIQUE 2</li>
-				<li>CRITIQUE 3</li>
-			</ul>
+			<p>Given the urgency of the message at the time of publication, the designers likely prioritized an
+				emotionally impactful visualization over precise data interpretation. However, alternative design
+				choices could have improved both impact and clarity. A more traditional time-series chart or small
+				multiples could have preserved the dramatic case increase while maintaining more accurate temporal and
+				quantitative comparisons. Additionally, incorporating color-coding to distinguish different years or to
+				encode case severity could have helped readers more easily track trends over time without relying solely
+				on radial distance. For instance, using a gradient to indicate case counts from lighter shades for lower
+				case numbers to darker or more intense colors for peak periods could improve the readability of the
+				scale. If the goal was to emphasize the cyclical nature of COVID-19 waves, a radial layout could still
+				be effective, but adjustments, such as a logarithmic scale or clearer monthly markers, would make the
+				visualization more informative without sacrificing its dramatic effect.</p>
 		</section>
 
 		<section>
 			<h2>Visualization Sketches</h2>
 
-      <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+			<figure>
+				<img src="figures/sketch1.jpg" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					This sketch modifies the original spiral visualization by replacing the filled area with radial
+					spikes to represent daily case counts more explicitly. It retains the cyclical nature of COVID-19
+					waves while improving readability of magnitude differences over time. Inspiration from <a
+						href="https://medium.com/select-from-data/the-new-york-times-viz-that-divided-datatwitter-8a406241bb21">The
+						New York Times viz that divided #DataTwitter</a>
 				</figcaption>
 			</figure>
 
@@ -61,15 +107,25 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>Instead of a filled-in shaded area, spikes are used to indicate daily cases, making it easier to see
+					fluctuations within each wave. This reduces the exaggeration caused by the previous thick bands.
+				</li>
+				<li>The spikes help provide a more proportional sense of case count differences between years,
+					addressing the issue of visual distortion in the original design.</li>
+				<li>Vertical and horizontal dashed lines were added to divide months more clearly, improving temporal
+					precision and making it easier to track trends over time.</li>
+				<li>Retains the compelling cyclical metaphor of pandemic waves while enhancing clarity and
+					comparability.</li>
+				<li>While spikes improve data readability, they might introduce clutter. The next sketch could explore
+					color or gradient-based approaches for additional clarity and grouping of waves.</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="figures/sketch2.jpg" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					This sketch refines the spiral design by incorporating monthly demarcations and color-coded case
+					severity, improving temporal readability while retaining the cyclical representation of COVID-19
+					waves. Inspiration from <a href="https://nathanaelj.github.io/portfolio/A3">Nathanael Jenkins</a>
 				</figcaption>
 			</figure>
 
@@ -78,15 +134,27 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>Each month is explicitly labeled, making it easier to track the progression of the pandemic and
+					connect case surges to real-world events. The dotted radial gridlines provide a reference for time
+					without overwhelming the design.</li>
+				<li>Shaded regions in red represent higher case counts, with darker shades indicating more severe peaks.
+					This helps the audience quickly identify surges while preserving visual clarity.</li>
+				<li>Unlike the original visualization, which exaggerated outer waves, this design keeps the width of the
+					spiral bands relatively consistent, reducing distortion and making different waves more directly
+					comparable.</li>
+				<li>A simple visual key in the top left explains the relationship between color intensity and case
+					numbers, improving accessibility for non-expert readers.</li>
+				<li>The spiral still introduces some distortion in comparing different years. The next iteration could
+					explore a more traditional time-series layout while maintaining some cyclical elements to emphasize
+					seasonality.</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="figures/sketch3.jpg" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					This sketch replaces the spiral format with a small multiples layout, using a grid of mini line
+					charts to allow for clearer temporal comparisons of COVID-19 case trends across different years and
+					months. Inspiration from <a href="https://infovis-a3.vercel.app/">Ryan Yen</a>
 				</figcaption>
 			</figure>
 
@@ -95,19 +163,32 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>Each row represents a month (January to December), while each column represents a year (2020, 2021,
+					2022). This makes it easier to compare seasonal patterns across different years without the
+					distortion caused by a spiral layout.</li>
+				<li>By breaking the data into smaller charts, trends become more visible at a monthly resolution.
+					Readers can quickly identify which months had the highest spikes across different years.</li>
+				<li>The rightmost column provides a shared Y-axis scale, ensuring that case numbers are interpreted
+					consistently across all mini charts. This solves the issue of exaggerated peaks in the original
+					visualization.</li>
+				<li>The format retains the ability to highlight seasonal COVID-19 waves (e.g., winter surges) while
+					offering a clearer, more structured way to track trends over time.</li>
+				<li>While this design improves accuracy, it may lack the immediate visual impact of the spiral. The next
+					iteration could explore ways to emphasize extreme peaks (e.g., using color intensity or annotations)
+					while preserving the clarity of small multiples.</li>
 			</ul>
 		</section>
 
 		<section>
 			<h2>Final Visualization Design</h2>
-      
+
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="figures/final_design.png" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					This calendar heat map visualizes daily confirmed COVID-19 cases in the U.S. from 2020 to 2022,
+					using color intensity to indicate case severity. By structuring the data into a familiar calendar
+					format, this design enables clear temporal comparisons while preserving the cyclical nature of
+					COVID-19 waves.
 				</figcaption>
 			</figure>
 
@@ -116,16 +197,35 @@
 		<section>
 			<h2>Design Process & Design Decisions</h2>
 
+			<h3>Reflection</h3>
+
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
-      </p>
-
-      <h3>Reflection</h3>
-
-      <p>
-        WRITE YOUR FINAL REFLECTION HERE.
-      </p>
+				This final design aims to improve both readability and accuracy by replacing the spiral format with a
+				calendar heat map, which better preserves temporal resolution and scale integrity. The main objective is
+				to highlight seasonality in COVID-19 case trends while allowing direct comparisons between years and
+				months. By structuring the data as a sequence of individual days, this visualization enables readers to
+				pinpoint when case surges occurred and how they evolved over time. The calendar layout retains the idea
+				of cyclical waves but removes the distortion introduced by radial scaling. Additionally, the use of
+				color gradients—ranging from light yellow to deep red—effectively conveys the severity of case spikes,
+				particularly the Omicron wave in early 2022, without the exaggeration caused by the original spiral
+				format. The inclusion of a consistent legend and labels for weekdays further enhances accessibility,
+				ensuring that even non-expert readers can interpret the data intuitively. </p>
+			<p>
+				The iterative redesign process revealed key trade-offs between emotional impact and data accuracy. The
+				original spiral visualization was striking but introduced distortion that made it difficult to compare
+				different waves quantitatively. The first sketch attempted to mitigate this by replacing filled areas
+				with spikes, improving clarity but increasing visual clutter. The second sketch incorporated explicit
+				month markers and color-coding to enhance interpretability while keeping the spiral structure, but it
+				still suffered from inherent distortions. The small multiples approach in the third sketch successfully
+				preserved temporal resolution and comparability, but it lacked the strong visual emphasis on extreme
+				peaks. The final calendar heat map strikes a balance between emphasizing major surges and maintaining
+				precision, offering a clear, data-driven representation of COVID-19 waves. However, this design does
+				somewhat downplay long-term trends by focusing on daily fluctuations. Future iterations could explore
+				hybrid models, such as combining heat maps with trend lines, to further enhance insight into long-term
+				pandemic patterns.
+			</p>
 		</section>
 	</main>
 </body>
+
 </html>
